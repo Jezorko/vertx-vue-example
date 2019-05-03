@@ -1,0 +1,12 @@
+matrix:
+  include:
+
+    - language: node_js
+      node_js: "7"
+      script:
+        - npm run build
+
+    - language: java
+      jdk: oraclejdk11
+      script:
+        - mvn clean compile assembly:single
