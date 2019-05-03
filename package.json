@@ -1,0 +1,48 @@
+{
+  "name": "hello-world",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "(npm i && cd src/main/javascript && ../../../node_modules/@vue/cli-service/bin/vue-cli-service.js serve)",
+    "build": "(npm i && cd src/main/javascript && ../../../node_modules/@vue/cli-service/bin/vue-cli-service.js build --dest ../../../target/frontend)",
+    "lint": "(npm i && cd src/main/javascript && ../../../node_modules/@vue/cli-service/bin/vue-cli-service.js lint)",
+    "package:jar": "mvn clean && npm run build && mvn compile assembly:single"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10",
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
