@@ -1,12 +1,17 @@
 {
-  "name": "hello-world",
-  "version": "0.1.0",
+  "name": "vertx-vue-example",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "(npm i && cd src/main/javascript && ../../../node_modules/@vue/cli-service/bin/vue-cli-service.js serve)",
     "build": "(npm i && cd src/main/javascript && ../../../node_modules/@vue/cli-service/bin/vue-cli-service.js build --dest ../../../target/frontend)",
     "lint": "(npm i && cd src/main/javascript && ../../../node_modules/@vue/cli-service/bin/vue-cli-service.js lint)",
     "package:jar": "mvn clean && npm run build && mvn compile assembly:single"
+  },
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jezorko/vertx-vue-example.git"
   },
   "dependencies": {
     "core-js": "^2.6.5",
