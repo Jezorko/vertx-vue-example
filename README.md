@@ -39,7 +39,7 @@ This will:
 ### Local development
 
 Repackaging the JAR file on every change would slow down the local development.
-Both application may be ran separately to avoid this issue.
+Both applications may be run separately to avoid this issue.
 
 #### Back-End
 
