@@ -19,3 +19,4 @@ yarn-debug.log*
 *.sln
 *.sw?
 *.ims
+*.iml
