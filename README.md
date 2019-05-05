@@ -1,5 +1,8 @@
 # vertx-vue-example
 
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-red.svg)](http://www.wtfpl.net/txt/copying/)
+[![Build Status](https://travis-ci.org/Jezorko/vertx-vue-example.svg?branch=master)](https://travis-ci.org/Jezorko/vertx-vue-example)
+
 This is a minimal example application that uses VueJS on the front-end and Vert.x on the back-end.
 
 API is exposed on paths starting with `/api` and contains only a single method, `/api/health`.
